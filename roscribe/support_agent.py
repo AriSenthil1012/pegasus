@@ -33,7 +33,7 @@ class SupportAgent:
 
         self.verbose = verbose
 
-        rag_tool = get_rag_tool(ros_distro)
+        rag_tool = get_rag_tools(ros_distro)
         load_file_tool = get_file_tool(agent=self)
 
         tools = [rag_tool, load_file_tool]

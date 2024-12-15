@@ -111,7 +111,7 @@ class PackAgent:
             file.write(self.package[file_type])
 
     def init_launch_agent(self):
-        rag_tool = get_rag_tool(self.ros_distro)
+        rag_tool = get_rag_tools(self.ros_distro)
         launch_edit_tool = get_launch_tool(agent=self)
 
         tools = [rag_tool, launch_edit_tool]

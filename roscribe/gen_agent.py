@@ -30,7 +30,7 @@ class GenAgent:
         self.ws_name = ws_name
         self.project_name = None
 
-        rag_tool = get_rag_tool(ros_distro)
+        rag_tool = get_rag_tools(ros_distro)
         code_gen_tool = get_code_gen_tool(agent=self)
         code_download_tool = get_code_retrieval_tool(agent=self)
 
